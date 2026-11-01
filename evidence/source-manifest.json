@@ -1,0 +1,51 @@
+{
+  "source": "user-supplied screenshots in conversation 2026-11-01",
+  "status": "referenced screenshots; not independent experimental evidence",
+  "figures": [
+    {
+      "original_filename": "1000368594.jpg",
+      "description": "results excerpt from user-supplied report",
+      "dimensions": [
+        141,
+        1536
+      ],
+      "sha256": "d903639ed5477bc610e32d3330df450ca7fb5d2a5798f6165b807f5c2a2d813b"
+    },
+    {
+      "original_filename": "1000368593.jpg",
+      "description": "weight-image CNN held-out confusion matrix",
+      "dimensions": [
+        1536,
+        1213
+      ],
+      "sha256": "d97d34338ce3fe4a6843f0cef952a1e8c4db6ea9076b36cfde35a967129b61a8"
+    },
+    {
+      "original_filename": "1000368590.jpg",
+      "description": "weight spectra regression and singular-value chart",
+      "dimensions": [
+        1536,
+        615
+      ],
+      "sha256": "5f6549a367ac0f130174edccb95070fbeda2d7177aed306ccd68adae9bba08c9"
+    },
+    {
+      "original_filename": "1000368587.jpg",
+      "description": "canonicalized weight-image grid",
+      "dimensions": [
+        1536,
+        1049
+      ],
+      "sha256": "ea95efd375c224707ab18192c401ee663dbd6e8937411820145b2511489fd9ba"
+    },
+    {
+      "original_filename": "1000368570.jpg",
+      "description": "proposed causal route comparison schematic",
+      "dimensions": [
+        1536,
+        1023
+      ],
+      "sha256": "ad8ba73b7ebcdeead6fa9bda609925297e637f5508cf8f273110c13526292ba0"
+    }
+  ]
+}

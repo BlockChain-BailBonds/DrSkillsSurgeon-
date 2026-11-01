@@ -1,0 +1,285 @@
+{
+  "chance_balanced": 0.25,
+  "config": {
+    "batch_size": 96,
+    "device": "cpu",
+    "hidden": 64,
+    "learning_rate": 0.003,
+    "patch_task": "copy",
+    "patch_top_k": 12,
+    "seeds": 8,
+    "steps": 160
+  },
+  "environment": {
+    "cuda_available": false,
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "python": "3.13.5",
+    "torch": "2.10.0+cpu"
+  },
+  "feature_groups": {
+    "activation": {
+      "accuracy": 0.6875,
+      "features": 44,
+      "per_seed_accuracy": {
+        "0": 0.75,
+        "1": 0.75,
+        "2": 0.5,
+        "3": 0.5,
+        "4": 0.75,
+        "5": 1.0,
+        "6": 0.75,
+        "7": 0.5
+      },
+      "predictions": 32,
+      "seed_bootstrap_ci95": [
+        0.59375,
+        0.8125
+      ]
+    },
+    "all": {
+      "accuracy": 0.78125,
+      "features": 165,
+      "per_seed_accuracy": {
+        "0": 0.75,
+        "1": 0.75,
+        "2": 1.0,
+        "3": 0.75,
+        "4": 0.75,
+        "5": 0.75,
+        "6": 0.75,
+        "7": 0.75
+      },
+      "predictions": 32,
+      "seed_bootstrap_ci95": [
+        0.75,
+        0.84375
+      ]
+    },
+    "raw_weight": {
+      "accuracy": 0.75,
+      "features": 49,
+      "per_seed_accuracy": {
+        "0": 0.75,
+        "1": 0.75,
+        "2": 0.75,
+        "3": 0.75,
+        "4": 0.75,
+        "5": 0.75,
+        "6": 0.75,
+        "7": 0.75
+      },
+      "predictions": 32,
+      "seed_bootstrap_ci95": [
+        0.75,
+        0.75
+      ]
+    },
+    "spectral": {
+      "accuracy": 0.71875,
+      "features": 72,
+      "per_seed_accuracy": {
+        "0": 0.5,
+        "1": 0.75,
+        "2": 0.75,
+        "3": 0.75,
+        "4": 0.75,
+        "5": 0.75,
+        "6": 0.75,
+        "7": 0.75
+      },
+      "predictions": 32,
+      "seed_bootstrap_ci95": [
+        0.65625,
+        0.75
+      ]
+    },
+    "untrained_control": {
+      "accuracy": 0.21875,
+      "features": 122,
+      "per_seed_accuracy": {
+        "0": 0.5,
+        "1": 0.25,
+        "2": 0.25,
+        "3": 0.0,
+        "4": 0.25,
+        "5": 0.0,
+        "6": 0.25,
+        "7": 0.25
+      },
+      "predictions": 32,
+      "seed_bootstrap_ci95": [
+        0.125,
+        0.3125
+      ]
+    },
+    "weight_combined": {
+      "accuracy": 0.8125,
+      "features": 121,
+      "per_seed_accuracy": {
+        "0": 0.75,
+        "1": 1.0,
+        "2": 1.0,
+        "3": 0.75,
+        "4": 0.75,
+        "5": 0.75,
+        "6": 0.75,
+        "7": 0.75
+      },
+      "predictions": 32,
+      "seed_bootstrap_ci95": [
+        0.75,
+        0.875
+      ]
+    }
+  },
+  "interpretation": "Independent task-specific toy models. Held-out initialization seed evaluation. Feature predictivity is not a causal skill map; activation interventions do not demonstrate skill extraction, removal, or retention.",
+  "majority_baseline_accuracy": 0.25,
+  "patching": [
+    {
+      "calibration_pairs": 32,
+      "candidate_indices": [
+        17,
+        16,
+        28,
+        61,
+        9,
+        13,
+        15,
+        42,
+        57,
+        6,
+        41,
+        11
+      ],
+      "clean_margin": 8.653234481811523,
+      "control_indices": [
+        63,
+        22,
+        60,
+        46,
+        30,
+        48,
+        37,
+        1,
+        54,
+        3,
+        38,
+        25
+      ],
+      "corrupted_margin": -8.613990783691406,
+      "full_patch_margin": 8.653234481811523,
+      "full_patch_max_abs_error": 0.0,
+      "interpretation": "hypothesis_only_single_model_toy_intervention",
+      "mean_clean_bad_gap": 17.26722526550293,
+      "random_improvement": 3.272091865539551,
+      "random_patch_margin": -5.341898441314697,
+      "reverse_necessity_drop": 3.425565719604492,
+      "reverse_top_margin": 5.227668762207031,
+      "site": "hidden1",
+      "status": "measured",
+      "task": "copy",
+      "test_pairs": 48,
+      "top_beats_random_at_ci95": false,
+      "top_improvement": 3.3585169315338135,
+      "top_k": 12,
+      "top_minus_random_bootstrap_ci95_high": 0.7060078652886052,
+      "top_minus_random_bootstrap_ci95_low": -0.4719750752051671,
+      "top_minus_random_mean": 0.08642550185322762,
+      "top_patch_margin": -5.255473613739014,
+      "top_recovery_fraction": 0.19450241019578154
+    },
+    {
+      "calibration_pairs": 32,
+      "candidate_indices": [
+        32,
+        59,
+        16,
+        54,
+        41,
+        1,
+        33,
+        8,
+        27,
+        38,
+        15,
+        3
+      ],
+      "clean_margin": 8.653234481811523,
+      "control_indices": [
+        23,
+        57,
+        62,
+        30,
+        34,
+        60,
+        22,
+        50,
+        14,
+        0,
+        4,
+        11
+      ],
+      "corrupted_margin": -8.613990783691406,
+      "full_patch_margin": 8.653234481811523,
+      "full_patch_max_abs_error": 0.0,
+      "interpretation": "hypothesis_only_single_model_toy_intervention",
+      "mean_clean_bad_gap": 17.26722526550293,
+      "random_improvement": 2.8011462688446045,
+      "random_patch_margin": -5.8128437995910645,
+      "reverse_necessity_drop": 3.599623441696167,
+      "reverse_top_margin": 5.053610801696777,
+      "site": "hidden2",
+      "status": "measured",
+      "task": "copy",
+      "test_pairs": 48,
+      "top_beats_random_at_ci95": true,
+      "top_improvement": 3.599623680114746,
+      "top_k": 12,
+      "top_minus_random_bootstrap_ci95_high": 1.623730523573855,
+      "top_minus_random_bootstrap_ci95_low": 0.03024444648375114,
+      "top_minus_random_mean": 0.7984772548079491,
+      "top_patch_margin": -5.01436710357666,
+      "top_recovery_fraction": 0.20846566977418202
+    }
+  ],
+  "sample_count": 32,
+  "seed_count": 8,
+  "spectral_regression_R2_heldout_seed": 0.9215059505066965,
+  "spectral_regression_note": "R2 may be negative; task/accuracy and training-progress confounds remain",
+  "spectral_regression_predictions_ordered_as_models_csv": [
+    0.8791341280928646,
+    0.8942951369422633,
+    0.6699099268802573,
+    0.9912231125479305,
+    0.9095590078910437,
+    0.9136892249777444,
+    0.7179861578862143,
+    0.994125581963693,
+    0.9237097851260654,
+    0.9134675369941386,
+    0.7256171988950811,
+    0.9692632452219222,
+    0.8958037691532333,
+    0.8909319291924718,
+    0.667834183448887,
+    0.9517989556587401,
+    0.925998941411575,
+    0.931317553609108,
+    0.6944949026110847,
+    0.9267962857639769,
+    0.9095917358430975,
+    0.9043141288967557,
+    0.6775530232568958,
+    0.9444108970023913,
+    0.9132614901186474,
+    0.9068383556651055,
+    0.7255026728708416,
+    0.999962595772813,
+    0.9211979536852677,
+    0.916084090262173,
+    0.7191014062958352,
+    0.9734567227349188
+  ],
+  "task_count": 4
+}

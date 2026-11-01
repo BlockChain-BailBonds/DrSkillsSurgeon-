@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 690" role="img" aria-label="Reconstructed weight-image CNN task confusion matrix">
+<rect width="840" height="690" fill="#fbfbfd"/>
+<text x="420" y="48" font-family="Arial,sans-serif" font-weight="bold" font-size="26" text-anchor="middle" fill="#111827">Weight-image CNN — task predictions</text>
+<text x="420" y="82" font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#475569">51 / 192 correct (26.5625%); balanced chance 25%</text>
+<text x="175" y="214" font-family="Arial,sans-serif" text-anchor="end" font-size="19" fill="#1e293b">copy</text>
+<rect x="185" y="142" width="137" height="116" fill="rgb(206,222,247)" stroke="#d5dce5" stroke-width="1"/>
+<text x="253" y="209" font-family="Arial,sans-serif" font-size="29" text-anchor="middle" fill="#0f172a">9</text>
+<rect x="324" y="142" width="137" height="116" fill="rgb(210,225,248)" stroke="#d5dce5" stroke-width="1"/>
+<text x="392" y="209" font-family="Arial,sans-serif" font-size="29" text-anchor="middle" fill="#0f172a">8</text>
+<rect x="463" y="142" width="137" height="116" fill="rgb(170,199,241)" stroke="#d5dce5" stroke-width="1"/>
+<text x="531" y="209" font-family="Arial,sans-serif" font-size="29" text-anchor="middle" fill="#0f172a">18</text>
+<rect x="602" y="142" width="137" height="116" fill="rgb(190,212,245)" stroke="#d5dce5" stroke-width="1"/>
+<text x="670" y="209" font-family="Arial,sans-serif" font-size="29" text-anchor="middle" fill="#0f172a">13</text>
+<text x="175" y="332" font-family="Arial,sans-serif" text-anchor="end" font-size="19" fill="#1e293b">reverse</text>
+<rect x="185" y="260" width="137" height="116" fill="rgb(198,217,246)" stroke="#d5dce5" stroke-width="1"/>
+<text x="253" y="327" font-family="Arial,sans-serif" font-size="29" text-anchor="middle" fill="#0f172a">11</text>
+<rect x="324" y="260" width="137" height="116" fill="rgb(234,241,252)" stroke="#d5dce5" stroke-width="1"/>
+<text x="392" y="327" font-family="Arial,sans-serif" font-size="29" text-anchor="middle" fill="#0f172a">2</text>
+<rect x="463" y="260" width="137" height="116" fill="rgb(162,193,240)" stroke="#d5dce5" stroke-width="1"/>
+<text x="531" y="327" font-family="Arial,sans-serif" font-size="29" text-anchor="middle" fill="#0f172a">20</text>
+<rect x="602" y="260" width="137" height="116" fill="rgb(182,207,243)" stroke="#d5dce5" stroke-width="1"/>
+<text x="670" y="327" font-family="Arial,sans-serif" font-size="29" text-anchor="middle" fill="#0f172a">15</text>
+<text x="175" y="450" font-family="Arial,sans-serif" text-anchor="end" font-size="19" fill="#1e293b">sort</text>
+<rect x="185" y="378" width="137" height="116" fill="rgb(214,228,249)" stroke="#d5dce5" stroke-width="1"/>
+<text x="253" y="445" font-family="Arial,sans-serif" font-size="29" text-anchor="middle" fill="#0f172a">7</text>
+<rect x="324" y="378" width="137" height="116" fill="rgb(218,230,249)" stroke="#d5dce5" stroke-width="1"/>
+<text x="392" y="445" font-family="Arial,sans-serif" font-size="29" text-anchor="middle" fill="#0f172a">6</text>
+<rect x="463" y="378" width="137" height="116" fill="rgb(151,186,238)" stroke="#d5dce5" stroke-width="1"/>
+<text x="531" y="445" font-family="Arial,sans-serif" font-size="29" text-anchor="middle" fill="#0f172a">23</text>
+<rect x="602" y="378" width="137" height="116" fill="rgb(194,215,245)" stroke="#d5dce5" stroke-width="1"/>
+<text x="670" y="445" font-family="Arial,sans-serif" font-size="29" text-anchor="middle" fill="#0f172a">12</text>
+<text x="175" y="568" font-family="Arial,sans-serif" text-anchor="end" font-size="19" fill="#1e293b">count_gt8</text>
+<rect x="185" y="496" width="137" height="116" fill="rgb(206,222,247)" stroke="#d5dce5" stroke-width="1"/>
+<text x="253" y="563" font-family="Arial,sans-serif" font-size="29" text-anchor="middle" fill="#0f172a">9</text>
+<rect x="324" y="496" width="137" height="116" fill="rgb(210,225,248)" stroke="#d5dce5" stroke-width="1"/>
+<text x="392" y="563" font-family="Arial,sans-serif" font-size="29" text-anchor="middle" fill="#0f172a">8</text>
+<rect x="463" y="496" width="137" height="116" fill="rgb(186,209,244)" stroke="#d5dce5" stroke-width="1"/>
+<text x="531" y="563" font-family="Arial,sans-serif" font-size="29" text-anchor="middle" fill="#0f172a">14</text>
+<rect x="602" y="496" width="137" height="116" fill="rgb(174,201,242)" stroke="#d5dce5" stroke-width="1"/>
+<text x="670" y="563" font-family="Arial,sans-serif" font-size="29" text-anchor="middle" fill="#0f172a">17</text>
+<text x="253" y="630" font-family="Arial,sans-serif" font-size="18" text-anchor="middle" fill="#334155">copy</text>
+<text x="392" y="630" font-family="Arial,sans-serif" font-size="18" text-anchor="middle" fill="#334155">reverse</text>
+<text x="531" y="630" font-family="Arial,sans-serif" font-size="18" text-anchor="middle" fill="#334155">sort</text>
+<text x="670" y="630" font-family="Arial,sans-serif" font-size="18" text-anchor="middle" fill="#334155">count_gt8</text>
+<text x="485" y="666" font-family="Arial,sans-serif" font-size="18" text-anchor="middle" fill="#475569">Predicted task · redrawn from supplied image</text></svg>

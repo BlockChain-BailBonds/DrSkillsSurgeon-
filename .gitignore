@@ -12,3 +12,7 @@ __pycache__/
 runs/
 outputs/
 .env
+
+# Research-generated outputs (published reports live under evidence/runs/)
+runs/
+outputs/

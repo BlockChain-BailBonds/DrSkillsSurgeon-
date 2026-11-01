@@ -2,7 +2,7 @@
 
 A staged research program for causal localization, selective extraction, and evaluation of model capability edits.
 
-**Status:** Stage 0 contract validation is implemented. Causal tracing, weight editing, extraction, and unlearning are research milestones, not implemented or verified by this scaffold.
+**Status:** Stage 0 contract validation and a Stage 1/2 **toy research implementation** are available. The experiment trains fresh small models, measures held-out feature predictions, and performs controlled activation interventions; it is not a real-model weight-editing or skill-unlearning system.
 
 ## Research principles
 
@@ -31,11 +31,24 @@ PYTHONPATH=src python -m rootforge_skill_surgery validate examples/toy-contract.
 
 The toy example is intentionally too small to pass that experimental gate.
 
+## Reproducible weight/activation research (optional dependencies)
+
+The [weight-image experiment](docs/WEIGHT_IMAGE_RESEARCH.md) reproduces a controlled comparison of unnormalized weight statistics, singular-value spectra, fixed-input activations, and untrained controls. It evaluates classifiers on **unseen initialization seeds**, and uses bidirectional activation patching with same-size random-site controls on held-out counterfactual pairs.
+
+```sh
+pip install -r requirements-research.txt
+PYTHONPATH=src python -m rootforge_skill_surgery.research.experiment \
+  --seeds 8 --steps 160 --batch-size 96 --device auto \
+  --output runs/my_first_experiment
+```
+
+The toy experiment is separate from the original user-supplied model screenshots. See the [evidence notes](docs/WEIGHT_IMAGE_RESEARCH.md), [reproduced confusion matrix](evidence/confusion-matrix.svg), and [controlled run](evidence/runs/20261101-seed8-summary.json) for provenance and limitations.
+
 ## Repository roadmap
 
 - **Stage 0:** Behavioral contract schema and validation (**implemented**).
-- **Stage 1:** Baseline behavior, paraphrases, held-out attacks, and activation fingerprints (**planned**).
-- **Stage 2:** Forward/backward activation patching with controls (**planned**).
+- **Stage 1:** Toy controlled behavioral fingerprints, weight/spectrum features, and held-out-seed prediction (**implemented as a research baseline**); full natural-language adversarial coverage **planned**.
+- **Stage 2:** Toy MLP neuron-level bidirectional activation patching with holdout and random controls (**implemented as a research baseline**); production transformer patching **planned**.
 - **Stage 3:** Path patching and minimal circuit proposals (**planned**).
 - **Stage 4:** Forget/retain-aware weight attribution and matched baselines (**planned**).
 - **Stage 5:** Reversible contamination rehearsal and statistical equivalence (**planned**).
