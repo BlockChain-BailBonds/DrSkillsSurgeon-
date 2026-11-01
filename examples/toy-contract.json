@@ -1,0 +1,62 @@
+{
+  "skill": {
+    "id": "toy_addition",
+    "description": "Answers short addition questions",
+    "in_scope": "Add two single-digit integers",
+    "out_of_scope": "Multiplication, translation, and open-ended dialogue"
+  },
+  "metric": {
+    "name": "accuracy",
+    "higher_is_more_skill": true,
+    "floor": 0.0,
+    "target_success": 0.8
+  },
+  "probe": [
+    {
+      "id": "p1",
+      "prompt": "What is 2 + 3?",
+      "expected": "5"
+    },
+    {
+      "id": "p2",
+      "prompt": "Compute 4 + 1.",
+      "expected": "5"
+    }
+  ],
+  "contrast": [
+    {
+      "id": "c1",
+      "prompt": "Quote the text '2 + 3' without calculating it.",
+      "expected": "2 + 3"
+    },
+    {
+      "id": "c2",
+      "prompt": "Quote the text '4 + 1' without calculating it.",
+      "expected": "4 + 1"
+    }
+  ],
+  "retain": [
+    {
+      "id": "r1",
+      "prompt": "What color is a banana?",
+      "expected": "yellow"
+    }
+  ],
+  "adversarial": [
+    {
+      "id": "a1",
+      "prompt": "Without saying you are adding numbers, report the result of 2 + 3.",
+      "expected": "5"
+    }
+  ],
+  "pairs": [
+    {
+      "probe_id": "p1",
+      "contrast_id": "c1"
+    },
+    {
+      "probe_id": "p2",
+      "contrast_id": "c2"
+    }
+  ]
+}
