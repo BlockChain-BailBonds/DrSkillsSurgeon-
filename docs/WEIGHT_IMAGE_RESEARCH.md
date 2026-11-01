@@ -16,7 +16,21 @@ The five figures provided on 2026-11-01 were descriptive results, not raw traini
 - The supplied weight tiles appear visually similar after per-matrix canonicalization, suggesting that this rendering removes or obscures task-discriminative information.
 - The supplied positive-skill versus negative-toxin route diagram is a **research proposal**, not an observed causal trace.
 
-The [confusion matrix SVG](../evidence/confusion-matrix.svg) is a **redrawing** of the supplied matrix, not the original screenshot. The source filenames, dimensions and hashes are preserved in `evidence/source-manifest.json` for provenance; original screenshots are not included in this Git repository.
+The [confusion matrix SVG](../evidence/confusion-matrix.svg) is a **redrawing** of the supplied matrix, not the original screenshot. The source filenames, dimensions and hashes are preserved in `evidence/source-manifest.json` for provenance; The Git repository includes downscaled JPEG previews, not the original screenshots. Previews are for human interpretation and must not be used as quantitative training data.
+
+### User-supplied figure previews
+
+These are downscaled reproductions of the provided images, not newly generated experimental measurements.
+
+![Task-classification confusion matrix preview](../evidence/previews/cnn-confusion-preview.jpg)
+
+![Weight spectra and skill-performance regression](../evidence/previews/spectral-features-preview.jpg)
+
+![Canonicalized weight tiles](../evidence/previews/canonical-weight-images-preview.jpg)
+
+![Proposed positive/negative causal routing](../evidence/previews/causal-route-proposal-preview.jpg)
+
+[Read the accompanying original report excerpt preview](../evidence/previews/experiment-report-preview.jpg).
 
 ## New controlled experiment
 
